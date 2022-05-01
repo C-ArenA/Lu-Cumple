@@ -7,7 +7,7 @@
 	<title>Luciana - Cumpleaños 7</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="the_body">
 	<main>
 		<section id="hero">
 			<div class="lu_hero">
@@ -23,9 +23,9 @@
 	</main>
 
 	<script>
-		hero.addEventListener("click", ()=>{console.log("Hola");main_audio.play();})
-		hero.addEventListener("touchstart", ()=>{console.log("Hola");main_audio.play();})
-		hero.addEventListener("scroll", ()=>{console.log("Hola");main_audio.play();})
+		document.addEventListener("click", ()=>{console.log("Hola");main_audio.play();})
+		document.addEventListener("touchstart", ()=>{console.log("Hola");main_audio.play();})
+		document.addEventListener("scroll", ()=>{console.log("HolaScroll");main_audio.play();})
 	</script>
 </body>
 </html>
