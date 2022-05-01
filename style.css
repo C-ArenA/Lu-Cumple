@@ -75,7 +75,14 @@ p{
 .story{
 	padding: 100px;
 	overflow-x: hidden;
+}
+.story1{
 	background-image: url("assets/f5765911a6dbdc305778c67c8f7d0c54.jpg");
+	background-repeat: repeat;
+	background-size: 200px;
+}
+.story2{
+	background-image: url("assets/NezukoPattern.png");
 	background-repeat: repeat;
 	background-size: 200px;
 }
