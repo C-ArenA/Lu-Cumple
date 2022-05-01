@@ -72,3 +72,35 @@ p{
 	text-align: center;
 	text-shadow: -3px 3px 0 #000, 3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000;
 }
+.story{
+	padding: 100px;
+	overflow-x: hidden;
+	background-image: url("assets/f5765911a6dbdc305778c67c8f7d0c54.jpg");
+	background-repeat: repeat;
+	background-size: 200px;
+}
+@media (max-width: 768px) {
+	.story{
+		padding: 30px 50px;
+		margin: auto;
+	}
+
+}
+.img-box{
+	max-width: 80vw;
+	min-width: 50vw;
+	
+}
+.img-box img {
+	width: 100%;
+}
+.text {
+	background-color: #000000cc;
+}
+@media (max-width: 768px) {
+	.text p {
+		font-size: 2rem;
+		margin: 20px 0;
+	}
+
+}
