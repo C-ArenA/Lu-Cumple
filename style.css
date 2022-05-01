@@ -3,33 +3,67 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	outline-style: dashed;
+	/*outline-style: dashed;*/
 	font-family: 'Jolly Lodger', cursive;
 	color: white;
 	
 
 }
 #hero {
+	padding: 100px;
+	overflow-x: hidden;
 	background-image: url("assets/NezukoPattern.png");
 	background-repeat: repeat;
-	background-size: 200px;
+	background-size: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 100px;
 	min-height: 100vh;
 }
+@media (max-width: 768px) {
+	#hero{
+		padding: 30px 100px;
+		gap: 0px;
+		flex-direction: column-reverse;
+	}
+	.hero_text{
+		align-items: center;
+	}
+
+}
 .lu_hero {
 	width: 40vw;
+	min-width: 100px;
 	max-width: 300px;
+	z-index: 500;
 }
 .lu_hero img {
 	width: 100%;
+}
+.hero_text{
+	position: relative;
+	z-index: 50;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 h1{
 	font-size: 6rem;
 	text-shadow: -5px 5px 0 #000, 5px 10px 0 #000, 5px -5px 0 #000, -5px -5px 0 #000;
 	font-weight: 900;
+	position: relative;
+	width: 100%;
+}
+h1::before{
+	position: absolute;
+	z-index: -1;
+	content: "";
+	background-color: #B76161;
+	left: -100vw;
+	height: 7rem;
+	width: 200vw;
 }
 p{
 	font-size: 3rem;
